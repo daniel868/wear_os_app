@@ -1,9 +1,11 @@
 package com.example.exercisesamplecompose.presentation.workout.details
 
+import android.util.Log
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
@@ -11,6 +13,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
@@ -27,6 +30,7 @@ import androidx.compose.ui.graphics.Path
 import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.drawscope.Stroke
+import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -36,6 +40,7 @@ import androidx.wear.compose.material.Card
 import androidx.wear.compose.material.CardDefaults
 import androidx.wear.compose.material.Chip
 import androidx.wear.compose.material.ChipDefaults
+import androidx.wear.compose.material.CircularProgressIndicator
 import androidx.wear.compose.material.Icon
 import androidx.wear.compose.material.MaterialTheme
 import androidx.wear.compose.material.Text
@@ -63,9 +68,30 @@ fun WorkoutDetailsScreenRoute() {
     val viewModel = hiltViewModel<WorkoutDetailsViewModel>()
     val uiState by viewModel.uiState.collectAsStateWithLifecycle()
 
-    WorkoutDetailsScreen(
-        workoutData = uiState.workoutDetails
-    )
+    Box(
+        modifier = Modifier.fillMaxSize(),
+        contentAlignment = Alignment.Center
+    ) {
+        when(uiState){
+            is WorkoutDetailsScreenState.Loading ->{
+                CircularProgressIndicator(
+                    modifier = Modifier.size(30.dp),
+                    strokeWidth = 4.dp
+                )
+            }
+            is WorkoutDetailsScreenState.Success -> {
+                val workoutData: WorkoutDetailsDto = (uiState as WorkoutDetailsScreenState.Success).workoutDetails
+                WorkoutDetailsScreen(workoutData)
+            }
+
+            is WorkoutDetailsScreenState.Error -> {
+                val errorText = (uiState as WorkoutDetailsScreenState.Error).message
+                Text(text =errorText)
+            }
+        }
+    }
+
+
 }
 
 @Composable
@@ -96,11 +122,10 @@ fun WorkoutDetailsScreen(workoutData: WorkoutDetailsDto?) {
                     horizontalArrangement = Arrangement.Center
                 ) {
                     Text(
-                        text = " ${formatTime(workoutData!!.startTime)} - ${formatTime(workoutData!!.finishTime)}",
+                        text = " ${formatTime(workoutData!!.startTime)} - ${formatTime(workoutData.finishTime)}",
                         fontSize = 12.sp
                     )
                 }
-
             }
 
             item {
@@ -136,8 +161,20 @@ fun WorkoutDetailsScreen(workoutData: WorkoutDetailsDto?) {
                 )
             }
             if (showHeartRateList) {
-                items(workoutData!!.heartRateStatus) { hr ->
-                    HeartRateCard(hr)
+                item{
+                    if (!workoutData!!.heartRateStatus.isEmpty()){
+                        HeartRateCard(heartRate = workoutData.heartRateStatus[0])
+                    }
+                }
+                item {
+                    val heartRates:List<Int> = if (workoutData?.heartRateStatus == null) {
+                        listOf()
+                    } else{
+                        workoutData.heartRateStatus.map {
+                            it.average.toInt()
+                        }
+                    }
+                    HeartRateTimeGraphWithTimestamp(heartRates)
                 }
             }
 
@@ -179,11 +216,6 @@ fun WorkoutDetailsScreen(workoutData: WorkoutDetailsDto?) {
                 }
             }
 
-//
-            item {
-                val heartRates = listOf(80, 85, 90, 95, 100, 105, 110, 115, 120, 125, 130,80)
-//                HeartRateGraph(heartRates)
-            }
         }
     }
 }

@@ -1,6 +1,7 @@
 package com.example.exercisesamplecompose.data
 
 import android.annotation.SuppressLint
+import android.os.FileUtils
 import androidx.health.services.client.ExerciseClient
 import androidx.health.services.client.ExerciseUpdateCallback
 import androidx.health.services.client.HealthServicesClient
@@ -25,14 +26,23 @@ import androidx.health.services.client.resumeExercise
 import androidx.health.services.client.startExercise
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.createSavedStateHandle
+import androidx.paging.LOGGER
 import com.example.exercisesamplecompose.pojo.WorkoutStatus
 import com.example.exercisesamplecompose.service.ExerciseLogger
 import com.example.exercisesamplecompose.service.aws.AwsIotService
+import com.example.exercisesamplecompose.utils.fromName
+import com.fasterxml.jackson.databind.ObjectMapper
+import com.fasterxml.jackson.databind.SerializationFeature
 import kotlinx.coroutines.channels.awaitClose
 import kotlinx.coroutines.channels.trySendBlocking
 import kotlinx.coroutines.flow.callbackFlow
+import java.io.File
+import java.io.FileOutputStream
+import java.io.OutputStream
+import java.util.ArrayList
 import java.util.Date
 import java.util.UUID
+import java.util.logging.Level
 import javax.inject.Inject
 import javax.inject.Singleton
 import kotlin.time.Duration
@@ -75,6 +85,8 @@ class ExerciseClientManager @Inject constructor(
             logger.log("No capabilities")
             return
         }
+
+        val testDataTypes = DataType.fromName("HeartRate")
 
         val dataTypes = setOf(
             DataType.HEART_RATE_BPM,
@@ -255,6 +267,3 @@ sealed class ExerciseMessage {
     class LocationAvailabilityMessage(val locationAvailability: LocationAvailability) :
         ExerciseMessage()
 }
-
-
-

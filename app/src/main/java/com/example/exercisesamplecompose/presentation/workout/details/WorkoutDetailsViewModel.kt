@@ -22,29 +22,21 @@ class WorkoutDetailsViewModel @Inject constructor(
     private val logger: ExerciseLogger,
     private val exerciseClientManager: ExerciseClientManager
 ) : ViewModel() {
-    private val _uiState = MutableStateFlow(
-        WorkoutDetailsScreenState(
-            WorkoutDetailsDto(
-                "",
-                0,
-                0,
-                DurationDto(0, 0, 0),
-                listOf(), listOf()
-            )
-        )
-    )
+    private val _uiState = MutableStateFlow<WorkoutDetailsScreenState>(WorkoutDetailsScreenState.Loading)
 
     val uiState: StateFlow<WorkoutDetailsScreenState> = _uiState.asStateFlow()
 
     init {
         viewModelScope.launch {
+            _uiState.value = WorkoutDetailsScreenState.Loading
             try {
                 val workoutId: String = exerciseClientManager.workoutId!!
                 logger.log("Fetching workout information for workoutId: $workoutId")
                 val workoutDetails =
                     awsApiGatewayService.getWorkoutDetails(workoutId)
-                _uiState.value = WorkoutDetailsScreenState(workoutDetails)
+                _uiState.value = WorkoutDetailsScreenState.Success(workoutDetails)
             } catch (e: Exception) {
+                _uiState.value = WorkoutDetailsScreenState.Error("Error getting workout details: " + e.message)
                 logger.error("Error getting workout details: " + e.message, e)
             }
         }

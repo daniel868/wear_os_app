@@ -27,10 +27,10 @@ fun HeartRateTimeGraphWithTimestamp(
     val textMeasurer = rememberTextMeasurer()
     val textColor = MaterialTheme.colors.onSurface
 
-    val timeStamps = ArrayList<Int>();
+    val timeStampsInMinutes = ArrayList<Int>();
 
     for (i in heartRates.indices) {
-        timeStamps.add(i + 1)
+        timeStampsInMinutes.add(i + 1)
     }
 
     Canvas(
@@ -49,7 +49,7 @@ fun HeartRateTimeGraphWithTimestamp(
         // Find min/max values
         val maxHeartRate = heartRates.maxOrNull()?: 200
         val minHeartRate = heartRates.minOrNull()?: 40
-        val maxTime = timeStamps.maxOrNull() ?: 10
+        val maxTime = timeStampsInMinutes.maxOrNull() ?: 10
         val yRange = (maxHeartRate - minHeartRate).coerceAtLeast(1)
 
         // Draw Y axis
@@ -141,10 +141,10 @@ fun HeartRateTimeGraphWithTimestamp(
         val yScale = (canvasHeight - 2 * padding) / yRange
 
         for (i in 0 until heartRates.size - 1) {
-            val startX = padding + timeStamps[i] * xScale
+            val startX = padding + timeStampsInMinutes[i] * xScale
             val startY = canvasHeight - padding - (heartRates[i] - minHeartRate) * yScale
 
-            val endX = padding + timeStamps[i+1] * xScale
+            val endX = padding + timeStampsInMinutes[i+1] * xScale
             val endY = canvasHeight - padding - (heartRates[i+1] - minHeartRate) * yScale
 
             drawLine(
@@ -164,7 +164,7 @@ fun HeartRateTimeGraphWithTimestamp(
 
         // Draw last data point
         if (heartRates.isNotEmpty()) {
-            val lastX = padding + timeStamps.last() * xScale
+            val lastX = padding + timeStampsInMinutes.last() * xScale
             val lastY = canvasHeight - padding - (heartRates.last() - minHeartRate) * yScale
             drawCircle(
                 color = graphColor,

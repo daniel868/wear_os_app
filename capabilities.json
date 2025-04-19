@@ -1,0 +1,1217 @@
+[
+  {
+    "exerciseType": "ALPINE_SKIING",
+    "supportedFeature": [
+      "Distance class java.lang.Double",
+      "Distance class java.lang.Double",
+      "Calories class java.lang.Double",
+      "Calories class java.lang.Double",
+      "Absolute Elevation class java.lang.Double",
+      "Absolute Elevation class java.lang.Double",
+      "Location class androidx.health.services.client.data.LocationData",
+      "HeartRate class java.lang.Double",
+      "HeartRate class java.lang.Double",
+      "Speed class java.lang.Double",
+      "Speed class java.lang.Double",
+      "Elevation Gain class java.lang.Double",
+      "Elevation Gain class java.lang.Double",
+      "Pace class java.lang.Double",
+      "Pace class java.lang.Double",
+      "Elevation Loss class java.lang.Double",
+      "Elevation Loss class java.lang.Double"
+    ]
+  },
+  {
+    "exerciseType": "BACKPACKING",
+    "supportedFeature": [
+      "Steps class java.lang.Long",
+      "Steps class java.lang.Long",
+      "Distance class java.lang.Double",
+      "Distance class java.lang.Double",
+      "Calories class java.lang.Double",
+      "Calories class java.lang.Double",
+      "Elevation Gain class java.lang.Double",
+      "Elevation Gain class java.lang.Double",
+      "Absolute Elevation class java.lang.Double",
+      "Absolute Elevation class java.lang.Double",
+      "Location class androidx.health.services.client.data.LocationData",
+      "HeartRate class java.lang.Double",
+      "HeartRate class java.lang.Double",
+      "Speed class java.lang.Double",
+      "Speed class java.lang.Double",
+      "Pace class java.lang.Double",
+      "Pace class java.lang.Double",
+      "Step per minute class java.lang.Long",
+      "Step per minute class java.lang.Long",
+      "Floors class java.lang.Double",
+      "Floors class java.lang.Double",
+      "Elevation Loss class java.lang.Double",
+      "Elevation Loss class java.lang.Double"
+    ]
+  },
+  {
+    "exerciseType": "BACK_EXTENSION",
+    "supportedFeature": [
+      "Calories class java.lang.Double",
+      "Calories class java.lang.Double",
+      "HeartRate class java.lang.Double",
+      "HeartRate class java.lang.Double"
+    ]
+  },
+  {
+    "exerciseType": "BADMINTON",
+    "supportedFeature": [
+      "Calories class java.lang.Double",
+      "Calories class java.lang.Double",
+      "HeartRate class java.lang.Double",
+      "HeartRate class java.lang.Double",
+      "Distance class java.lang.Double",
+      "Distance class java.lang.Double",
+      "Location class androidx.health.services.client.data.LocationData",
+      "Steps class java.lang.Long",
+      "Steps class java.lang.Long"
+    ]
+  },
+  {
+    "exerciseType": "BARBELL_SHOULDER_PRESS",
+    "supportedFeature": [
+      "Calories class java.lang.Double",
+      "Calories class java.lang.Double",
+      "HeartRate class java.lang.Double",
+      "HeartRate class java.lang.Double"
+    ]
+  },
+  {
+    "exerciseType": "BASEBALL",
+    "supportedFeature": [
+      "Calories class java.lang.Double",
+      "Calories class java.lang.Double",
+      "HeartRate class java.lang.Double",
+      "HeartRate class java.lang.Double",
+      "Distance class java.lang.Double",
+      "Distance class java.lang.Double",
+      "Location class androidx.health.services.client.data.LocationData",
+      "Steps class java.lang.Long",
+      "Steps class java.lang.Long"
+    ]
+  },
+  {
+    "exerciseType": "BASKETBALL",
+    "supportedFeature": [
+      "Calories class java.lang.Double",
+      "Calories class java.lang.Double",
+      "HeartRate class java.lang.Double",
+      "HeartRate class java.lang.Double",
+      "Distance class java.lang.Double",
+      "Distance class java.lang.Double",
+      "Location class androidx.health.services.client.data.LocationData",
+      "Steps class java.lang.Long",
+      "Steps class java.lang.Long"
+    ]
+  },
+  {
+    "exerciseType": "BENCH_PRESS",
+    "supportedFeature": [
+      "Calories class java.lang.Double",
+      "Calories class java.lang.Double",
+      "HeartRate class java.lang.Double",
+      "HeartRate class java.lang.Double"
+    ]
+  },
+  {
+    "exerciseType": "BIKING",
+    "supportedFeature": [
+      "Distance class java.lang.Double",
+      "Distance class java.lang.Double",
+      "Calories class java.lang.Double",
+      "Calories class java.lang.Double",
+      "Elevation Gain class java.lang.Double",
+      "Elevation Gain class java.lang.Double",
+      "Absolute Elevation class java.lang.Double",
+      "Absolute Elevation class java.lang.Double",
+      "Location class androidx.health.services.client.data.LocationData",
+      "HeartRate class java.lang.Double",
+      "HeartRate class java.lang.Double",
+      "Speed class java.lang.Double",
+      "Speed class java.lang.Double",
+      "Pace class java.lang.Double",
+      "Pace class java.lang.Double",
+      "Elevation Loss class java.lang.Double",
+      "Elevation Loss class java.lang.Double"
+    ]
+  },
+  {
+    "exerciseType": "BIKING_STATIONARY",
+    "supportedFeature": [
+      "HeartRate class java.lang.Double",
+      "HeartRate class java.lang.Double",
+      "Calories class java.lang.Double",
+      "Calories class java.lang.Double"
+    ]
+  },
+  {
+    "exerciseType": "BOOT_CAMP",
+    "supportedFeature": [
+      "HeartRate class java.lang.Double",
+      "HeartRate class java.lang.Double",
+      "Calories class java.lang.Double",
+      "Calories class java.lang.Double"
+    ]
+  },
+  {
+    "exerciseType": "BOXING",
+    "supportedFeature": [
+      "HeartRate class java.lang.Double",
+      "HeartRate class java.lang.Double",
+      "Calories class java.lang.Double",
+      "Calories class java.lang.Double",
+      "Steps class java.lang.Long",
+      "Steps class java.lang.Long"
+    ]
+  },
+  {
+    "exerciseType": "BURPEE",
+    "supportedFeature": [
+      "Calories class java.lang.Double",
+      "Calories class java.lang.Double",
+      "HeartRate class java.lang.Double",
+      "HeartRate class java.lang.Double"
+    ]
+  },
+  {
+    "exerciseType": "CALISTHENICS",
+    "supportedFeature": [
+      "HeartRate class java.lang.Double",
+      "HeartRate class java.lang.Double",
+      "Calories class java.lang.Double",
+      "Calories class java.lang.Double"
+    ]
+  },
+  {
+    "exerciseType": "CRICKET",
+    "supportedFeature": [
+      "Calories class java.lang.Double",
+      "Calories class java.lang.Double",
+      "HeartRate class java.lang.Double",
+      "HeartRate class java.lang.Double",
+      "Distance class java.lang.Double",
+      "Distance class java.lang.Double",
+      "Location class androidx.health.services.client.data.LocationData",
+      "Steps class java.lang.Long",
+      "Steps class java.lang.Long"
+    ]
+  },
+  {
+    "exerciseType": "CROSS_COUNTRY_SKIING",
+    "supportedFeature": [
+      "Distance class java.lang.Double",
+      "Distance class java.lang.Double",
+      "Calories class java.lang.Double",
+      "Calories class java.lang.Double",
+      "Absolute Elevation class java.lang.Double",
+      "Absolute Elevation class java.lang.Double",
+      "Location class androidx.health.services.client.data.LocationData",
+      "HeartRate class java.lang.Double",
+      "HeartRate class java.lang.Double",
+      "Speed class java.lang.Double",
+      "Speed class java.lang.Double",
+      "Elevation Gain class java.lang.Double",
+      "Elevation Gain class java.lang.Double",
+      "Pace class java.lang.Double",
+      "Pace class java.lang.Double",
+      "Elevation Loss class java.lang.Double",
+      "Elevation Loss class java.lang.Double"
+    ]
+  },
+  {
+    "exerciseType": "CRUNCH",
+    "supportedFeature": [
+      "Calories class java.lang.Double",
+      "Calories class java.lang.Double",
+      "HeartRate class java.lang.Double",
+      "HeartRate class java.lang.Double"
+    ]
+  },
+  {
+    "exerciseType": "DANCING",
+    "supportedFeature": [
+      "HeartRate class java.lang.Double",
+      "HeartRate class java.lang.Double",
+      "Calories class java.lang.Double",
+      "Calories class java.lang.Double"
+    ]
+  },
+  {
+    "exerciseType": "DEADLIFT",
+    "supportedFeature": [
+      "Calories class java.lang.Double",
+      "Calories class java.lang.Double",
+      "HeartRate class java.lang.Double",
+      "HeartRate class java.lang.Double"
+    ]
+  },
+  {
+    "exerciseType": "ELLIPTICAL",
+    "supportedFeature": [
+      "HeartRate class java.lang.Double",
+      "HeartRate class java.lang.Double",
+      "Calories class java.lang.Double",
+      "Calories class java.lang.Double",
+      "Distance class java.lang.Double",
+      "Distance class java.lang.Double",
+      "Steps class java.lang.Long",
+      "Steps class java.lang.Long",
+      "Step per minute class java.lang.Long",
+      "Step per minute class java.lang.Long"
+    ]
+  },
+  {
+    "exerciseType": "EXERCISE_CLASS",
+    "supportedFeature": [
+      "HeartRate class java.lang.Double",
+      "HeartRate class java.lang.Double",
+      "Calories class java.lang.Double",
+      "Calories class java.lang.Double"
+    ]
+  },
+  {
+    "exerciseType": "FENCING",
+    "supportedFeature": [
+      "HeartRate class java.lang.Double",
+      "HeartRate class java.lang.Double",
+      "Calories class java.lang.Double",
+      "Calories class java.lang.Double"
+    ]
+  },
+  {
+    "exerciseType": "FOOTBALL_AMERICAN",
+    "supportedFeature": [
+      "Calories class java.lang.Double",
+      "Calories class java.lang.Double",
+      "HeartRate class java.lang.Double",
+      "HeartRate class java.lang.Double",
+      "Distance class java.lang.Double",
+      "Distance class java.lang.Double",
+      "Location class androidx.health.services.client.data.LocationData",
+      "Steps class java.lang.Long",
+      "Steps class java.lang.Long"
+    ]
+  },
+  {
+    "exerciseType": "FOOTBALL_AUSTRALIAN",
+    "supportedFeature": [
+      "Calories class java.lang.Double",
+      "Calories class java.lang.Double",
+      "HeartRate class java.lang.Double",
+      "HeartRate class java.lang.Double",
+      "Distance class java.lang.Double",
+      "Distance class java.lang.Double",
+      "Location class androidx.health.services.client.data.LocationData",
+      "Steps class java.lang.Long",
+      "Steps class java.lang.Long"
+    ]
+  },
+  {
+    "exerciseType": "FRISBEE_DISC",
+    "supportedFeature": [
+      "Calories class java.lang.Double",
+      "Calories class java.lang.Double",
+      "HeartRate class java.lang.Double",
+      "HeartRate class java.lang.Double",
+      "Distance class java.lang.Double",
+      "Distance class java.lang.Double",
+      "Location class androidx.health.services.client.data.LocationData",
+      "Steps class java.lang.Long",
+      "Steps class java.lang.Long"
+    ]
+  },
+  {
+    "exerciseType": "GOLF",
+    "supportedFeature": [
+      "HeartRate class java.lang.Double",
+      "HeartRate class java.lang.Double",
+      "Calories class java.lang.Double",
+      "Calories class java.lang.Double",
+      "Distance class java.lang.Double",
+      "Distance class java.lang.Double",
+      "Location class androidx.health.services.client.data.LocationData",
+      "Speed class java.lang.Double",
+      "Speed class java.lang.Double",
+      "Pace class java.lang.Double",
+      "Pace class java.lang.Double",
+      "Absolute Elevation class java.lang.Double",
+      "Absolute Elevation class java.lang.Double",
+      "Elevation Gain class java.lang.Double",
+      "Elevation Gain class java.lang.Double",
+      "Steps class java.lang.Long",
+      "Steps class java.lang.Long",
+      "Step per minute class java.lang.Long",
+      "Step per minute class java.lang.Long",
+      "Golf Shot Count class java.lang.Long",
+      "Golf Shot Count class java.lang.Long",
+      "Elevation Loss class java.lang.Double",
+      "Elevation Loss class java.lang.Double"
+    ]
+  },
+  {
+    "exerciseType": "GYMNASTICS",
+    "supportedFeature": [
+      "HeartRate class java.lang.Double",
+      "HeartRate class java.lang.Double",
+      "Calories class java.lang.Double",
+      "Calories class java.lang.Double"
+    ]
+  },
+  {
+    "exerciseType": "HANDBALL",
+    "supportedFeature": [
+      "Calories class java.lang.Double",
+      "Calories class java.lang.Double",
+      "HeartRate class java.lang.Double",
+      "HeartRate class java.lang.Double",
+      "Distance class java.lang.Double",
+      "Distance class java.lang.Double",
+      "Location class androidx.health.services.client.data.LocationData",
+      "Steps class java.lang.Long",
+      "Steps class java.lang.Long"
+    ]
+  },
+  {
+    "exerciseType": "HIGH_INTENSITY_INTERVAL_TRAINING",
+    "supportedFeature": [
+      "HeartRate class java.lang.Double",
+      "HeartRate class java.lang.Double",
+      "Calories class java.lang.Double",
+      "Calories class java.lang.Double",
+      "Steps class java.lang.Long",
+      "Steps class java.lang.Long"
+    ]
+  },
+  {
+    "exerciseType": "HIKING",
+    "supportedFeature": [
+      "Steps class java.lang.Long",
+      "Steps class java.lang.Long",
+      "Distance class java.lang.Double",
+      "Distance class java.lang.Double",
+      "Calories class java.lang.Double",
+      "Calories class java.lang.Double",
+      "Elevation Gain class java.lang.Double",
+      "Elevation Gain class java.lang.Double",
+      "Absolute Elevation class java.lang.Double",
+      "Absolute Elevation class java.lang.Double",
+      "Location class androidx.health.services.client.data.LocationData",
+      "HeartRate class java.lang.Double",
+      "HeartRate class java.lang.Double",
+      "Speed class java.lang.Double",
+      "Speed class java.lang.Double",
+      "Pace class java.lang.Double",
+      "Pace class java.lang.Double",
+      "Step per minute class java.lang.Long",
+      "Step per minute class java.lang.Long",
+      "Floors class java.lang.Double",
+      "Floors class java.lang.Double",
+      "Elevation Loss class java.lang.Double",
+      "Elevation Loss class java.lang.Double"
+    ]
+  },
+  {
+    "exerciseType": "HORSE_RIDING",
+    "supportedFeature": [
+      "Distance class java.lang.Double",
+      "Distance class java.lang.Double",
+      "Calories class java.lang.Double",
+      "Calories class java.lang.Double",
+      "Absolute Elevation class java.lang.Double",
+      "Absolute Elevation class java.lang.Double",
+      "Location class androidx.health.services.client.data.LocationData",
+      "HeartRate class java.lang.Double",
+      "HeartRate class java.lang.Double",
+      "Speed class java.lang.Double",
+      "Speed class java.lang.Double",
+      "Elevation Gain class java.lang.Double",
+      "Elevation Gain class java.lang.Double",
+      "Pace class java.lang.Double",
+      "Pace class java.lang.Double",
+      "Elevation Loss class java.lang.Double",
+      "Elevation Loss class java.lang.Double"
+    ]
+  },
+  {
+    "exerciseType": "ICE_HOCKEY",
+    "supportedFeature": [
+      "Calories class java.lang.Double",
+      "Calories class java.lang.Double",
+      "HeartRate class java.lang.Double",
+      "HeartRate class java.lang.Double",
+      "Distance class java.lang.Double",
+      "Distance class java.lang.Double",
+      "Location class androidx.health.services.client.data.LocationData"
+    ]
+  },
+  {
+    "exerciseType": "ICE_SKATING",
+    "supportedFeature": [
+      "Calories class java.lang.Double",
+      "Calories class java.lang.Double",
+      "HeartRate class java.lang.Double",
+      "HeartRate class java.lang.Double",
+      "Distance class java.lang.Double",
+      "Distance class java.lang.Double",
+      "Location class androidx.health.services.client.data.LocationData"
+    ]
+  },
+  {
+    "exerciseType": "INLINE_SKATING",
+    "supportedFeature": [
+      "Distance class java.lang.Double",
+      "Distance class java.lang.Double",
+      "Calories class java.lang.Double",
+      "Calories class java.lang.Double",
+      "Absolute Elevation class java.lang.Double",
+      "Absolute Elevation class java.lang.Double",
+      "Location class androidx.health.services.client.data.LocationData",
+      "HeartRate class java.lang.Double",
+      "HeartRate class java.lang.Double",
+      "Speed class java.lang.Double",
+      "Speed class java.lang.Double",
+      "Elevation Gain class java.lang.Double",
+      "Elevation Gain class java.lang.Double",
+      "Pace class java.lang.Double",
+      "Pace class java.lang.Double",
+      "Elevation Loss class java.lang.Double",
+      "Elevation Loss class java.lang.Double"
+    ]
+  },
+  {
+    "exerciseType": "JUMPING_JACK",
+    "supportedFeature": [
+      "HeartRate class java.lang.Double",
+      "HeartRate class java.lang.Double",
+      "Calories class java.lang.Double",
+      "Calories class java.lang.Double",
+      "Steps class java.lang.Long",
+      "Steps class java.lang.Long",
+      "Step per minute class java.lang.Long",
+      "Step per minute class java.lang.Long"
+    ]
+  },
+  {
+    "exerciseType": "JUMP_ROPE",
+    "supportedFeature": [
+      "HeartRate class java.lang.Double",
+      "HeartRate class java.lang.Double",
+      "Calories class java.lang.Double",
+      "Calories class java.lang.Double",
+      "Steps class java.lang.Long",
+      "Steps class java.lang.Long",
+      "Step per minute class java.lang.Long",
+      "Step per minute class java.lang.Long"
+    ]
+  },
+  {
+    "exerciseType": "LAT_PULL_DOWN",
+    "supportedFeature": [
+      "Calories class java.lang.Double",
+      "Calories class java.lang.Double",
+      "HeartRate class java.lang.Double",
+      "HeartRate class java.lang.Double"
+    ]
+  },
+  {
+    "exerciseType": "LUNGE",
+    "supportedFeature": [
+      "Calories class java.lang.Double",
+      "Calories class java.lang.Double",
+      "HeartRate class java.lang.Double",
+      "HeartRate class java.lang.Double"
+    ]
+  },
+  {
+    "exerciseType": "MARTIAL_ARTS",
+    "supportedFeature": [
+      "HeartRate class java.lang.Double",
+      "HeartRate class java.lang.Double",
+      "Calories class java.lang.Double",
+      "Calories class java.lang.Double"
+    ]
+  },
+  {
+    "exerciseType": "MEDITATION",
+    "supportedFeature": [
+      "HeartRate class java.lang.Double",
+      "HeartRate class java.lang.Double",
+      "Calories class java.lang.Double",
+      "Calories class java.lang.Double"
+    ]
+  },
+  {
+    "exerciseType": "MOUNTAIN_BIKING",
+    "supportedFeature": [
+      "Distance class java.lang.Double",
+      "Distance class java.lang.Double",
+      "Calories class java.lang.Double",
+      "Calories class java.lang.Double",
+      "Absolute Elevation class java.lang.Double",
+      "Absolute Elevation class java.lang.Double",
+      "Location class androidx.health.services.client.data.LocationData",
+      "HeartRate class java.lang.Double",
+      "HeartRate class java.lang.Double",
+      "Speed class java.lang.Double",
+      "Speed class java.lang.Double",
+      "Elevation Gain class java.lang.Double",
+      "Elevation Gain class java.lang.Double",
+      "Pace class java.lang.Double",
+      "Pace class java.lang.Double",
+      "Elevation Loss class java.lang.Double",
+      "Elevation Loss class java.lang.Double"
+    ]
+  },
+  {
+    "exerciseType": "UNKNOWN",
+    "supportedFeature": [
+      "HeartRate class java.lang.Double",
+      "HeartRate class java.lang.Double",
+      "Calories class java.lang.Double",
+      "Calories class java.lang.Double",
+      "Distance class java.lang.Double",
+      "Distance class java.lang.Double",
+      "Location class androidx.health.services.client.data.LocationData",
+      "Speed class java.lang.Double",
+      "Speed class java.lang.Double",
+      "Pace class java.lang.Double",
+      "Pace class java.lang.Double",
+      "Absolute Elevation class java.lang.Double",
+      "Absolute Elevation class java.lang.Double",
+      "Elevation Gain class java.lang.Double",
+      "Elevation Gain class java.lang.Double",
+      "Elevation Loss class java.lang.Double",
+      "Elevation Loss class java.lang.Double"
+    ]
+  },
+  {
+    "exerciseType": "ORIENTEERING",
+    "supportedFeature": [
+      "Steps class java.lang.Long",
+      "Steps class java.lang.Long",
+      "Distance class java.lang.Double",
+      "Distance class java.lang.Double",
+      "Calories class java.lang.Double",
+      "Calories class java.lang.Double",
+      "Elevation Gain class java.lang.Double",
+      "Elevation Gain class java.lang.Double",
+      "Absolute Elevation class java.lang.Double",
+      "Absolute Elevation class java.lang.Double",
+      "Location class androidx.health.services.client.data.LocationData",
+      "HeartRate class java.lang.Double",
+      "HeartRate class java.lang.Double",
+      "Speed class java.lang.Double",
+      "Speed class java.lang.Double",
+      "Pace class java.lang.Double",
+      "Pace class java.lang.Double",
+      "Step per minute class java.lang.Long",
+      "Step per minute class java.lang.Long",
+      "Floors class java.lang.Double",
+      "Floors class java.lang.Double",
+      "Elevation Loss class java.lang.Double",
+      "Elevation Loss class java.lang.Double"
+    ]
+  },
+  {
+    "exerciseType": "PADDLING",
+    "supportedFeature": [
+      "Distance class java.lang.Double",
+      "Distance class java.lang.Double",
+      "Calories class java.lang.Double",
+      "Calories class java.lang.Double",
+      "Location class androidx.health.services.client.data.LocationData",
+      "HeartRate class java.lang.Double",
+      "HeartRate class java.lang.Double",
+      "Speed class java.lang.Double",
+      "Speed class java.lang.Double",
+      "Pace class java.lang.Double",
+      "Pace class java.lang.Double"
+    ]
+  },
+  {
+    "exerciseType": "PARA_GLIDING",
+    "supportedFeature": [
+      "Distance class java.lang.Double",
+      "Distance class java.lang.Double",
+      "Calories class java.lang.Double",
+      "Calories class java.lang.Double",
+      "Absolute Elevation class java.lang.Double",
+      "Absolute Elevation class java.lang.Double",
+      "Location class androidx.health.services.client.data.LocationData",
+      "HeartRate class java.lang.Double",
+      "HeartRate class java.lang.Double",
+      "Speed class java.lang.Double",
+      "Speed class java.lang.Double",
+      "Elevation Gain class java.lang.Double",
+      "Elevation Gain class java.lang.Double",
+      "Pace class java.lang.Double",
+      "Pace class java.lang.Double",
+      "Elevation Loss class java.lang.Double",
+      "Elevation Loss class java.lang.Double"
+    ]
+  },
+  {
+    "exerciseType": "PILATES",
+    "supportedFeature": [
+      "HeartRate class java.lang.Double",
+      "HeartRate class java.lang.Double",
+      "Calories class java.lang.Double",
+      "Calories class java.lang.Double"
+    ]
+  },
+  {
+    "exerciseType": "PLANK",
+    "supportedFeature": [
+      "HeartRate class java.lang.Double",
+      "HeartRate class java.lang.Double",
+      "Calories class java.lang.Double",
+      "Calories class java.lang.Double"
+    ]
+  },
+  {
+    "exerciseType": "RACQUETBALL",
+    "supportedFeature": [
+      "HeartRate class java.lang.Double",
+      "HeartRate class java.lang.Double",
+      "Calories class java.lang.Double",
+      "Calories class java.lang.Double"
+    ]
+  },
+  {
+    "exerciseType": "ROCK_CLIMBING",
+    "supportedFeature": [
+      "HeartRate class java.lang.Double",
+      "HeartRate class java.lang.Double",
+      "Calories class java.lang.Double",
+      "Calories class java.lang.Double",
+      "Absolute Elevation class java.lang.Double",
+      "Absolute Elevation class java.lang.Double",
+      "Elevation Gain class java.lang.Double",
+      "Elevation Gain class java.lang.Double",
+      "Location class androidx.health.services.client.data.LocationData",
+      "Elevation Loss class java.lang.Double",
+      "Elevation Loss class java.lang.Double"
+    ]
+  },
+  {
+    "exerciseType": "ROLLER_HOCKEY",
+    "supportedFeature": [
+      "HeartRate class java.lang.Double",
+      "HeartRate class java.lang.Double",
+      "Calories class java.lang.Double",
+      "Calories class java.lang.Double"
+    ]
+  },
+  {
+    "exerciseType": "ROLLER_SKATING",
+    "supportedFeature": [
+      "Distance class java.lang.Double",
+      "Distance class java.lang.Double",
+      "Calories class java.lang.Double",
+      "Calories class java.lang.Double",
+      "Absolute Elevation class java.lang.Double",
+      "Absolute Elevation class java.lang.Double",
+      "Location class androidx.health.services.client.data.LocationData",
+      "HeartRate class java.lang.Double",
+      "HeartRate class java.lang.Double",
+      "Speed class java.lang.Double",
+      "Speed class java.lang.Double",
+      "Elevation Gain class java.lang.Double",
+      "Elevation Gain class java.lang.Double",
+      "Pace class java.lang.Double",
+      "Pace class java.lang.Double",
+      "Elevation Loss class java.lang.Double",
+      "Elevation Loss class java.lang.Double"
+    ]
+  },
+  {
+    "exerciseType": "ROWING",
+    "supportedFeature": [
+      "HeartRate class java.lang.Double",
+      "HeartRate class java.lang.Double",
+      "Calories class java.lang.Double",
+      "Calories class java.lang.Double",
+      "Distance class java.lang.Double",
+      "Distance class java.lang.Double",
+      "Location class androidx.health.services.client.data.LocationData",
+      "Speed class java.lang.Double",
+      "Speed class java.lang.Double",
+      "Pace class java.lang.Double",
+      "Pace class java.lang.Double"
+    ]
+  },
+  {
+    "exerciseType": "ROWING_MACHINE",
+    "supportedFeature": [
+      "HeartRate class java.lang.Double",
+      "HeartRate class java.lang.Double",
+      "Calories class java.lang.Double",
+      "Calories class java.lang.Double"
+    ]
+  },
+  {
+    "exerciseType": "RUGBY",
+    "supportedFeature": [
+      "Calories class java.lang.Double",
+      "Calories class java.lang.Double",
+      "HeartRate class java.lang.Double",
+      "HeartRate class java.lang.Double",
+      "Distance class java.lang.Double",
+      "Distance class java.lang.Double",
+      "Location class androidx.health.services.client.data.LocationData",
+      "Steps class java.lang.Long",
+      "Steps class java.lang.Long"
+    ]
+  },
+  {
+    "exerciseType": "RUNNING",
+    "supportedFeature": [
+      "Steps class java.lang.Long",
+      "Steps class java.lang.Long",
+      "Distance class java.lang.Double",
+      "Distance class java.lang.Double",
+      "Calories class java.lang.Double",
+      "Calories class java.lang.Double",
+      "Elevation Gain class java.lang.Double",
+      "Elevation Gain class java.lang.Double",
+      "Absolute Elevation class java.lang.Double",
+      "Absolute Elevation class java.lang.Double",
+      "Location class androidx.health.services.client.data.LocationData",
+      "HeartRate class java.lang.Double",
+      "HeartRate class java.lang.Double",
+      "Speed class java.lang.Double",
+      "Speed class java.lang.Double",
+      "Pace class java.lang.Double",
+      "Pace class java.lang.Double",
+      "Step per minute class java.lang.Long",
+      "Step per minute class java.lang.Long",
+      "Floors class java.lang.Double",
+      "Floors class java.lang.Double",
+      "Elevation Loss class java.lang.Double",
+      "Elevation Loss class java.lang.Double",
+      "Ground Contact Time long",
+      "Ground Contact Time long",
+      "Ground Contact Balance double",
+      "Ground Contact Balance double",
+      "Vertical Oscillation double",
+      "Vertical Oscillation double",
+      "Vertical Ratio double",
+      "Vertical Ratio double",
+      "Stride Length double",
+      "Stride Length double"
+    ]
+  },
+  {
+    "exerciseType": "RUNNING_TREADMILL",
+    "supportedFeature": [
+      "HeartRate class java.lang.Double",
+      "HeartRate class java.lang.Double",
+      "Calories class java.lang.Double",
+      "Calories class java.lang.Double",
+      "Distance class java.lang.Double",
+      "Distance class java.lang.Double",
+      "Speed class java.lang.Double",
+      "Speed class java.lang.Double",
+      "Steps class java.lang.Long",
+      "Steps class java.lang.Long",
+      "Step per minute class java.lang.Long",
+      "Step per minute class java.lang.Long",
+      "Pace class java.lang.Double",
+      "Pace class java.lang.Double"
+    ]
+  },
+  {
+    "exerciseType": "SAILING",
+    "supportedFeature": [
+      "Distance class java.lang.Double",
+      "Distance class java.lang.Double",
+      "Calories class java.lang.Double",
+      "Calories class java.lang.Double",
+      "Location class androidx.health.services.client.data.LocationData",
+      "HeartRate class java.lang.Double",
+      "HeartRate class java.lang.Double",
+      "Speed class java.lang.Double",
+      "Speed class java.lang.Double",
+      "Pace class java.lang.Double",
+      "Pace class java.lang.Double"
+    ]
+  },
+  {
+    "exerciseType": "SCUBA_DIVING",
+    "supportedFeature": [
+      "HeartRate class java.lang.Double",
+      "HeartRate class java.lang.Double",
+      "Calories class java.lang.Double",
+      "Calories class java.lang.Double",
+      "Absolute Elevation class java.lang.Double",
+      "Absolute Elevation class java.lang.Double",
+      "Elevation Gain class java.lang.Double",
+      "Elevation Gain class java.lang.Double",
+      "Elevation Loss class java.lang.Double",
+      "Elevation Loss class java.lang.Double"
+    ]
+  },
+  {
+    "exerciseType": "SKATING",
+    "supportedFeature": [
+      "Distance class java.lang.Double",
+      "Distance class java.lang.Double",
+      "Calories class java.lang.Double",
+      "Calories class java.lang.Double",
+      "Absolute Elevation class java.lang.Double",
+      "Absolute Elevation class java.lang.Double",
+      "Location class androidx.health.services.client.data.LocationData",
+      "HeartRate class java.lang.Double",
+      "HeartRate class java.lang.Double",
+      "Speed class java.lang.Double",
+      "Speed class java.lang.Double",
+      "Elevation Gain class java.lang.Double",
+      "Elevation Gain class java.lang.Double",
+      "Pace class java.lang.Double",
+      "Pace class java.lang.Double",
+      "Elevation Loss class java.lang.Double",
+      "Elevation Loss class java.lang.Double"
+    ]
+  },
+  {
+    "exerciseType": "SKIING",
+    "supportedFeature": [
+      "Distance class java.lang.Double",
+      "Distance class java.lang.Double",
+      "Calories class java.lang.Double",
+      "Calories class java.lang.Double",
+      "Absolute Elevation class java.lang.Double",
+      "Absolute Elevation class java.lang.Double",
+      "Location class androidx.health.services.client.data.LocationData",
+      "HeartRate class java.lang.Double",
+      "HeartRate class java.lang.Double",
+      "Speed class java.lang.Double",
+      "Speed class java.lang.Double",
+      "Elevation Gain class java.lang.Double",
+      "Elevation Gain class java.lang.Double",
+      "Pace class java.lang.Double",
+      "Pace class java.lang.Double",
+      "Elevation Loss class java.lang.Double",
+      "Elevation Loss class java.lang.Double"
+    ]
+  },
+  {
+    "exerciseType": "SNOWBOARDING",
+    "supportedFeature": [
+      "Distance class java.lang.Double",
+      "Distance class java.lang.Double",
+      "Calories class java.lang.Double",
+      "Calories class java.lang.Double",
+      "Absolute Elevation class java.lang.Double",
+      "Absolute Elevation class java.lang.Double",
+      "Location class androidx.health.services.client.data.LocationData",
+      "HeartRate class java.lang.Double",
+      "HeartRate class java.lang.Double",
+      "Speed class java.lang.Double",
+      "Speed class java.lang.Double",
+      "Elevation Gain class java.lang.Double",
+      "Elevation Gain class java.lang.Double",
+      "Pace class java.lang.Double",
+      "Pace class java.lang.Double",
+      "Elevation Loss class java.lang.Double",
+      "Elevation Loss class java.lang.Double"
+    ]
+  },
+  {
+    "exerciseType": "SNOWSHOEING",
+    "supportedFeature": [
+      "Steps class java.lang.Long",
+      "Steps class java.lang.Long",
+      "Distance class java.lang.Double",
+      "Distance class java.lang.Double",
+      "Calories class java.lang.Double",
+      "Calories class java.lang.Double",
+      "Elevation Gain class java.lang.Double",
+      "Elevation Gain class java.lang.Double",
+      "Absolute Elevation class java.lang.Double",
+      "Absolute Elevation class java.lang.Double",
+      "Location class androidx.health.services.client.data.LocationData",
+      "HeartRate class java.lang.Double",
+      "HeartRate class java.lang.Double",
+      "Speed class java.lang.Double",
+      "Speed class java.lang.Double",
+      "Pace class java.lang.Double",
+      "Pace class java.lang.Double",
+      "Step per minute class java.lang.Long",
+      "Step per minute class java.lang.Long",
+      "Floors class java.lang.Double",
+      "Floors class java.lang.Double",
+      "Elevation Loss class java.lang.Double",
+      "Elevation Loss class java.lang.Double"
+    ]
+  },
+  {
+    "exerciseType": "SOCCER",
+    "supportedFeature": [
+      "Calories class java.lang.Double",
+      "Calories class java.lang.Double",
+      "HeartRate class java.lang.Double",
+      "HeartRate class java.lang.Double",
+      "Distance class java.lang.Double",
+      "Distance class java.lang.Double",
+      "Location class androidx.health.services.client.data.LocationData",
+      "Steps class java.lang.Long",
+      "Steps class java.lang.Long"
+    ]
+  },
+  {
+    "exerciseType": "SOFTBALL",
+    "supportedFeature": [
+      "Calories class java.lang.Double",
+      "Calories class java.lang.Double",
+      "HeartRate class java.lang.Double",
+      "HeartRate class java.lang.Double",
+      "Distance class java.lang.Double",
+      "Distance class java.lang.Double",
+      "Location class androidx.health.services.client.data.LocationData",
+      "Steps class java.lang.Long",
+      "Steps class java.lang.Long"
+    ]
+  },
+  {
+    "exerciseType": "SQUASH",
+    "supportedFeature": [
+      "HeartRate class java.lang.Double",
+      "HeartRate class java.lang.Double",
+      "Calories class java.lang.Double",
+      "Calories class java.lang.Double"
+    ]
+  },
+  {
+    "exerciseType": "SQUAT",
+    "supportedFeature": [
+      "Calories class java.lang.Double",
+      "Calories class java.lang.Double",
+      "HeartRate class java.lang.Double",
+      "HeartRate class java.lang.Double"
+    ]
+  },
+  {
+    "exerciseType": "STAIR_CLIMBING",
+    "supportedFeature": [
+      "HeartRate class java.lang.Double",
+      "HeartRate class java.lang.Double",
+      "Calories class java.lang.Double",
+      "Calories class java.lang.Double",
+      "Steps class java.lang.Long",
+      "Steps class java.lang.Long",
+      "Step per minute class java.lang.Long",
+      "Step per minute class java.lang.Long",
+      "Floors class java.lang.Double",
+      "Floors class java.lang.Double"
+    ]
+  },
+  {
+    "exerciseType": "STAIR_CLIMBING_MACHINE",
+    "supportedFeature": [
+      "HeartRate class java.lang.Double",
+      "HeartRate class java.lang.Double",
+      "Calories class java.lang.Double",
+      "Calories class java.lang.Double",
+      "Steps class java.lang.Long",
+      "Steps class java.lang.Long",
+      "Step per minute class java.lang.Long",
+      "Step per minute class java.lang.Long",
+      "Floors class java.lang.Double",
+      "Floors class java.lang.Double"
+    ]
+  },
+  {
+    "exerciseType": "STRENGTH_TRAINING",
+    "supportedFeature": [
+      "HeartRate class java.lang.Double",
+      "HeartRate class java.lang.Double",
+      "Calories class java.lang.Double",
+      "Calories class java.lang.Double"
+    ]
+  },
+  {
+    "exerciseType": "STRETCHING",
+    "supportedFeature": [
+      "HeartRate class java.lang.Double",
+      "HeartRate class java.lang.Double",
+      "Calories class java.lang.Double",
+      "Calories class java.lang.Double"
+    ]
+  },
+  {
+    "exerciseType": "SURFING",
+    "supportedFeature": [
+      "Distance class java.lang.Double",
+      "Distance class java.lang.Double",
+      "Calories class java.lang.Double",
+      "Calories class java.lang.Double",
+      "Location class androidx.health.services.client.data.LocationData",
+      "HeartRate class java.lang.Double",
+      "HeartRate class java.lang.Double",
+      "Speed class java.lang.Double",
+      "Speed class java.lang.Double",
+      "Pace class java.lang.Double",
+      "Pace class java.lang.Double"
+    ]
+  },
+  {
+    "exerciseType": "SWIMMING_OPEN_WATER",
+    "supportedFeature": [
+      "Location class androidx.health.services.client.data.LocationData",
+      "Calories class java.lang.Double",
+      "Calories class java.lang.Double",
+      "Distance class java.lang.Double",
+      "Distance class java.lang.Double",
+      "HeartRate class java.lang.Double",
+      "HeartRate class java.lang.Double",
+      "Speed class java.lang.Double",
+      "Speed class java.lang.Double",
+      "Pace class java.lang.Double",
+      "Pace class java.lang.Double",
+      "Absolute Elevation class java.lang.Double",
+      "Absolute Elevation class java.lang.Double"
+    ]
+  },
+  {
+    "exerciseType": "SWIMMING_POOL",
+    "supportedFeature": [
+      "Calories class java.lang.Double",
+      "Calories class java.lang.Double",
+      "Distance class java.lang.Double",
+      "Distance class java.lang.Double",
+      "HeartRate class java.lang.Double",
+      "HeartRate class java.lang.Double",
+      "Location class androidx.health.services.client.data.LocationData",
+      "Speed class java.lang.Double",
+      "Speed class java.lang.Double",
+      "Pace class java.lang.Double",
+      "Pace class java.lang.Double"
+    ]
+  },
+  {
+    "exerciseType": "TABLE_TENNIS",
+    "supportedFeature": [
+      "HeartRate class java.lang.Double",
+      "HeartRate class java.lang.Double",
+      "Calories class java.lang.Double",
+      "Calories class java.lang.Double"
+    ]
+  },
+  {
+    "exerciseType": "TENNIS",
+    "supportedFeature": [
+      "Calories class java.lang.Double",
+      "Calories class java.lang.Double",
+      "HeartRate class java.lang.Double",
+      "HeartRate class java.lang.Double",
+      "Distance class java.lang.Double",
+      "Distance class java.lang.Double",
+      "Location class androidx.health.services.client.data.LocationData",
+      "Steps class java.lang.Long",
+      "Steps class java.lang.Long"
+    ]
+  },
+  {
+    "exerciseType": "VOLLEYBALL",
+    "supportedFeature": [
+      "Calories class java.lang.Double",
+      "Calories class java.lang.Double",
+      "HeartRate class java.lang.Double",
+      "HeartRate class java.lang.Double",
+      "Distance class java.lang.Double",
+      "Distance class java.lang.Double",
+      "Location class androidx.health.services.client.data.LocationData",
+      "Steps class java.lang.Long",
+      "Steps class java.lang.Long"
+    ]
+  },
+  {
+    "exerciseType": "WALKING",
+    "supportedFeature": [
+      "Steps class java.lang.Long",
+      "Steps class java.lang.Long",
+      "Distance class java.lang.Double",
+      "Distance class java.lang.Double",
+      "Calories class java.lang.Double",
+      "Calories class java.lang.Double",
+      "Elevation Gain class java.lang.Double",
+      "Elevation Gain class java.lang.Double",
+      "Absolute Elevation class java.lang.Double",
+      "Absolute Elevation class java.lang.Double",
+      "Location class androidx.health.services.client.data.LocationData",
+      "HeartRate class java.lang.Double",
+      "HeartRate class java.lang.Double",
+      "Speed class java.lang.Double",
+      "Speed class java.lang.Double",
+      "Pace class java.lang.Double",
+      "Pace class java.lang.Double",
+      "Step per minute class java.lang.Long",
+      "Step per minute class java.lang.Long",
+      "Floors class java.lang.Double",
+      "Floors class java.lang.Double",
+      "Elevation Loss class java.lang.Double",
+      "Elevation Loss class java.lang.Double"
+    ]
+  },
+  {
+    "exerciseType": "WATER_POLO",
+    "supportedFeature": [
+      "HeartRate class java.lang.Double",
+      "HeartRate class java.lang.Double",
+      "Calories class java.lang.Double",
+      "Calories class java.lang.Double"
+    ]
+  },
+  {
+    "exerciseType": "WEIGHTLIFTING",
+    "supportedFeature": [
+      "HeartRate class java.lang.Double",
+      "HeartRate class java.lang.Double",
+      "Calories class java.lang.Double",
+      "Calories class java.lang.Double"
+    ]
+  },
+  {
+    "exerciseType": "WORKOUT",
+    "supportedFeature": [
+      "Calories class java.lang.Double",
+      "Calories class java.lang.Double",
+      "HeartRate class java.lang.Double",
+      "HeartRate class java.lang.Double",
+      "Distance class java.lang.Double",
+      "Distance class java.lang.Double",
+      "Location class androidx.health.services.client.data.LocationData"
+    ]
+  },
+  {
+    "exerciseType": "YACHTING",
+    "supportedFeature": [
+      "Distance class java.lang.Double",
+      "Distance class java.lang.Double",
+      "Calories class java.lang.Double",
+      "Calories class java.lang.Double",
+      "Location class androidx.health.services.client.data.LocationData",
+      "HeartRate class java.lang.Double",
+      "HeartRate class java.lang.Double",
+      "Speed class java.lang.Double",
+      "Speed class java.lang.Double",
+      "Pace class java.lang.Double",
+      "Pace class java.lang.Double"
+    ]
+  },
+  {
+    "exerciseType": "YOGA",
+    "supportedFeature": [
+      "HeartRate class java.lang.Double",
+      "HeartRate class java.lang.Double",
+      "Calories class java.lang.Double",
+      "Calories class java.lang.Double"
+    ]
+  }
+]

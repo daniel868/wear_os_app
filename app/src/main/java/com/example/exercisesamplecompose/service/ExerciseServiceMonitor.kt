@@ -98,14 +98,15 @@ class ExerciseServiceMonitor @Inject constructor(
                 }
             }
 
-            val heartRateBpm: StatisticalDataPoint<Double>? =
-                exerciseUpdate.latestMetrics.getData(DataType.HEART_RATE_BPM_STATS);
+            //TODO: modify here to sent the data point information
+            val heartRateBpm: SampleDataPoint<Double>? =
+                exerciseUpdate.latestMetrics.getData(DataType.HEART_RATE_BPM)[0];
 //
             if (heartRateBpm != null) {
                 val heartRateStatus = HeartRateStatus(
-                    heartRateBpm.average,
-                    heartRateBpm.min,
-                    heartRateBpm.max,
+                    heartRateBpm.value,
+                    heartRateBpm.value,
+                    heartRateBpm.value,
                     exerciseClientManager.workoutId!!
                 )
                 CoroutineScope(Dispatchers.IO).launch {

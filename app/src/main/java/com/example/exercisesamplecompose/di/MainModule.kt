@@ -10,6 +10,7 @@ import com.example.exercisesamplecompose.service.aws.AwsIotService
 import com.example.exercisesamplecompose.service.ExerciseLogger
 import com.example.exercisesamplecompose.service.aws.AwsApiGatewayService
 import com.example.exercisesamplecompose.service.aws.AwsApiGatewayServiceImpl
+import com.example.exercisesamplecompose.service.shared.SharedService
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -55,5 +56,11 @@ class MainModule {
     @Provides
     fun provideAwsApiGatewayService(awsRetrofitApi: AwsRetrofitApi): AwsApiGatewayService {
         return AwsApiGatewayServiceImpl(awsRetrofitApi)
+    }
+
+    @Singleton
+    @Provides
+    fun provideSharedService(): SharedService {
+        return SharedService()
     }
 }

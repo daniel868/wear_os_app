@@ -24,10 +24,11 @@ data class ExerciseMetrics(
             calories = latestMetrics.getData(DataType.CALORIES_TOTAL)?.total ?: calories,
             heartRateAverage = latestMetrics.getData(DataType.HEART_RATE_BPM_STATS)?.average
                 ?: heartRateAverage,
-            stepsPerMinute = if (latestMetrics.getData(DataType.STEPS_PER_MINUTE).isEmpty()) 0 else
-                latestMetrics.getData(DataType.STEPS_PER_MINUTE)[0].value,
-            location = if (latestMetrics.getData(DataType.LOCATION).isEmpty()) LocationData(0.0,0.0) else
-                latestMetrics.getData(DataType.LOCATION)[0].value
+            stepsPerMinute = latestMetrics.getData(DataType.STEPS_PER_MINUTE).lastOrNull()?.value
+                ?: stepsPerMinute,
+            location =
+            if (latestMetrics.getData(DataType.LOCATION).isEmpty()) LocationData(0.0, 0.0) else
+                latestMetrics.getData(DataType.LOCATION).lastOrNull()?.value
         )
     }
 }

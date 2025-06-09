@@ -14,7 +14,7 @@ data class WorkoutDetailsDto(
     @JsonProperty("durationDto")
     val durationDto: DurationDto,
     @JsonProperty("heartRateStatus")
-    val heartRateStatus: List<HearRateDto>,
+    val heartRateStatus: List<HeartRateDto>,
     @JsonProperty("locations")
     val locations: List<LocationDataDto>
 )

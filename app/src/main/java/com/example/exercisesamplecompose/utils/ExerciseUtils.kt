@@ -1,5 +1,7 @@
 package com.example.exercisesamplecompose.utils
 
+import androidx.health.services.client.ExerciseClient
+import androidx.health.services.client.data.AggregateDataType
 import androidx.health.services.client.data.DataType
 import androidx.health.services.client.data.DataType.Companion.ABSOLUTE_ELEVATION
 import androidx.health.services.client.data.DataType.Companion.ABSOLUTE_ELEVATION_STATS
@@ -56,12 +58,26 @@ import androidx.health.services.client.data.DataType.Companion.VO2_MAX
 import androidx.health.services.client.data.DataType.Companion.VO2_MAX_STATS
 import androidx.health.services.client.data.DataType.Companion.WALKING_STEPS
 import androidx.health.services.client.data.DataType.Companion.WALKING_STEPS_TOTAL
+import androidx.health.services.client.data.ExerciseUpdate
+import androidx.health.services.client.data.StatisticalDataPoint
+import com.example.exercisesamplecompose.data.ExerciseClientManager
 
-fun DataType.Companion.fromName(name:String):  Set<DataType<*, *>>{
-   return ALL_DATA_TYPES.filter { it.name == name }.toSet()
+fun DataType.Companion.fromName(name: String): Set<DataType<*, *>> {
+    return ALL_DATA_TYPES.filter { it.name == name }.toSet()
 }
 
-private val ALL_DATA_TYPES =  setOf(
+fun DataType.Companion.Wrapper(name: String, exerciseUpdate: ExerciseUpdate) {
+    val dataTypesForName = ALL_DATA_TYPES.filter { it.name == name }.toSet()
+    dataTypesForName.forEach {
+        if (it is AggregateDataType<*, *>) {
+            val updatedValue = exerciseUpdate.latestMetrics.getData(it)
+            if (updatedValue is StatisticalDataPoint<*>) {
+            }
+        }
+    }
+}
+
+private val ALL_DATA_TYPES = setOf(
     ABSOLUTE_ELEVATION_STATS,
     ACTIVE_EXERCISE_DURATION_TOTAL,
     CALORIES_TOTAL,
@@ -118,3 +134,24 @@ private val ALL_DATA_TYPES =  setOf(
     VO2_MAX,
     WALKING_STEPS
 )
+
+/*
+Distance class java.lang.Double
+Calories class java.lang.Double
+Absolute Elevation class java.lang.Double
+Location class androidx.health.services.client.data.LocationData
+HeartRate class java.lang.Double
+Speed class java.lang.Double
+Elevation Gain class java.lang.Double
+Pace class java.lang.Double
+Elevation Loss class java.lang.Double
+Steps class java.lang.Long
+Step per minute class java.lang.Long
+Floors class java.lang.Double
+Golf Shot Count class java.lang.Long
+Ground Contact Time long
+Ground Contact Balance double
+Vertical Oscillation double
+Vertical Ratio double
+Stride Length double
+ */

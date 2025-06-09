@@ -1,7 +1,6 @@
 package com.example.exercisesamplecompose.data
 
 import android.annotation.SuppressLint
-import android.os.FileUtils
 import androidx.health.services.client.ExerciseClient
 import androidx.health.services.client.ExerciseUpdateCallback
 import androidx.health.services.client.HealthServicesClient
@@ -24,25 +23,16 @@ import androidx.health.services.client.pauseExercise
 import androidx.health.services.client.prepareExercise
 import androidx.health.services.client.resumeExercise
 import androidx.health.services.client.startExercise
-import androidx.lifecycle.SavedStateHandle
-import androidx.lifecycle.createSavedStateHandle
-import androidx.paging.LOGGER
 import com.example.exercisesamplecompose.pojo.WorkoutStatus
 import com.example.exercisesamplecompose.service.ExerciseLogger
 import com.example.exercisesamplecompose.service.aws.AwsIotService
+import com.example.exercisesamplecompose.service.shared.SharedService
 import com.example.exercisesamplecompose.utils.fromName
-import com.fasterxml.jackson.databind.ObjectMapper
-import com.fasterxml.jackson.databind.SerializationFeature
 import kotlinx.coroutines.channels.awaitClose
 import kotlinx.coroutines.channels.trySendBlocking
 import kotlinx.coroutines.flow.callbackFlow
-import java.io.File
-import java.io.FileOutputStream
-import java.io.OutputStream
-import java.util.ArrayList
 import java.util.Date
 import java.util.UUID
-import java.util.logging.Level
 import javax.inject.Inject
 import javax.inject.Singleton
 import kotlin.time.Duration
@@ -53,6 +43,7 @@ import kotlin.time.Duration
 class ExerciseClientManager @Inject constructor(
     healthServicesClient: HealthServicesClient,
     private val logger: ExerciseLogger,
+    private val sharedService: SharedService,
     serviceClient: AwsIotService
 ) {
     val exerciseClient: ExerciseClient = healthServicesClient.exerciseClient
@@ -86,7 +77,14 @@ class ExerciseClientManager @Inject constructor(
             return
         }
 
-        val testDataTypes = DataType.fromName("HeartRate")
+//        val testDataTypes = setOf(
+//            DataType.fromName("HeartRate"),
+//            DataType.fromName("Calories"),
+//            DataType.fromName("Distance"),
+//            DataType.fromName("Location"),
+//            DataType.fromName("Pace"),
+//            DataType.fromName("Step per minute")
+//        ).flatMap { it.toSet() }.toSet()
 
         val dataTypes = setOf(
             DataType.HEART_RATE_BPM,
@@ -138,13 +136,24 @@ class ExerciseClientManager @Inject constructor(
 
 
         val supportsAutoPauseAndResume = capabilities.supportsAutoPauseAndResume
+        val sharedDataState = sharedService.sharedDataState
+        val selectedExercise: ExerciseType = ExerciseType.VALUES.filter {
+            it.name == sharedDataState.selectedWorkoutExercise
+        }.first()
+
+        var trackingDataTypes = sharedDataState.trackingDataTypes.map { DataType.fromName(it) }
+            .flatMap { it.toSet() }
+            .toSet()
+
+        trackingDataTypes =  trackingDataTypes.intersect(capabilities.supportedDataTypes);
 
         val config = ExerciseConfig(
-            exerciseType = ExerciseType.RUNNING,
-            dataTypes = dataTypes,
-            isAutoPauseAndResumeEnabled = supportsAutoPauseAndResume,
-            isGpsEnabled = true,
-            exerciseGoals = exerciseGoals
+            exerciseType = selectedExercise,
+            dataTypes = trackingDataTypes,
+            isAutoPauseAndResumeEnabled = false,
+            isGpsEnabled = sharedDataState.isGpsRequired!!,
+            exerciseGoals = exerciseGoals,
+            swimmingPoolLengthMeters = 250f,
         )
 
         exerciseClient.startExercise(config)
@@ -170,9 +179,14 @@ class ExerciseClientManager @Inject constructor(
 
     suspend fun prepareExercise() {
         logger.log("Preparing an exercise")
+        val sharedDataState = sharedService.sharedDataState
+        val selectedExercise: ExerciseType = ExerciseType.VALUES.filter {
+            it.name == sharedDataState.selectedWorkoutExercise
+        }.first()
+
         val warmUpConfig = WarmUpConfig(
-            exerciseType = ExerciseType.RUNNING,
-            dataTypes = setOf(DataType.HEART_RATE_BPM, DataType.LOCATION)
+            exerciseType = selectedExercise,
+            dataTypes = setOf(DataType.HEART_RATE_BPM)
         )
         try {
             exerciseClient.prepareExercise(warmUpConfig)
@@ -197,6 +211,7 @@ class ExerciseClientManager @Inject constructor(
         } catch (e: Exception) {
             logger.error("Error inserting into dynamo", e)
         }
+        sharedService.clearOldValues();
     }
 
     suspend fun pauseExercise() {

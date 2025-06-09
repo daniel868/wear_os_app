@@ -36,6 +36,8 @@ sealed class Screen(
         val elapsedTimeArg = "elapsedTime"
     }
     object WorkoutDetails: Screen("workoutDetails")
+
+    object ChooseWorkout : Screen("chooseWorkout")
 }
 
 fun NavController.navigateToTopLevel(screen: Screen, route: String = screen.route) {

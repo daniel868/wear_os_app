@@ -2,7 +2,7 @@ package com.example.exercisesamplecompose.pojo
 
 import com.fasterxml.jackson.annotation.JsonProperty
 
-data class HearRateDto(
+data class HeartRateDto(
     @JsonProperty("average")
     val average: Double,
     @JsonProperty("min")

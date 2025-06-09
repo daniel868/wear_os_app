@@ -26,24 +26,23 @@ import androidx.wear.compose.navigation.SwipeDismissableNavHost
 import androidx.wear.compose.navigation.composable
 import androidx.wear.compose.navigation.currentBackStackEntryAsState
 import com.example.exercisesamplecompose.app.Screen
+import com.example.exercisesamplecompose.app.Screen.ChooseWorkout
 import com.example.exercisesamplecompose.app.Screen.Exercise
 import com.example.exercisesamplecompose.app.Screen.ExerciseNotAvailable
 import com.example.exercisesamplecompose.app.Screen.PreparingExercise
 import com.example.exercisesamplecompose.app.Screen.Summary
 import com.example.exercisesamplecompose.app.Screen.WorkoutDetails
 import com.example.exercisesamplecompose.app.navigateToTopLevel
-import com.example.exercisesamplecompose.pojo.WorkoutDetailsDto
 import com.example.exercisesamplecompose.presentation.dialogs.ExerciseNotAvailable
 import com.example.exercisesamplecompose.presentation.exercise.ExerciseRoute
 import com.example.exercisesamplecompose.presentation.preparing.PreparingExerciseRoute
 import com.example.exercisesamplecompose.presentation.summary.SummaryRoute
-import com.example.exercisesamplecompose.presentation.workout.details.WorkoutDetailsScreen
 import com.example.exercisesamplecompose.presentation.workout.details.WorkoutDetailsScreenRoute
+import com.example.exercisesamplecompose.presentation.workout.selector.WorkoutSelectorRoute
 import com.google.android.horologist.compose.ambient.AmbientAware
 import com.google.android.horologist.compose.ambient.AmbientState
 import com.google.android.horologist.compose.layout.AppScaffold
 import com.google.android.horologist.compose.layout.ResponsiveTimeText
-import com.google.gson.Gson
 
 /** Navigation for the exercise app. **/
 @Composable
@@ -68,9 +67,21 @@ fun ExerciseSampleApp(
         ) {
             SwipeDismissableNavHost(
                 navController = navController,
-                startDestination = Exercise.route,
+                startDestination = ChooseWorkout.route,
 
                 ) {
+                composable(ChooseWorkout.route) {
+                    WorkoutSelectorRoute(
+                        onWorkoutItemClick = {
+                            navController.navigate(PreparingExercise.route) {
+                                popUpTo(navController.graph.id) {
+                                    inclusive = false
+                                }
+                            }
+                        }
+                    )
+                }
+
                 composable(PreparingExercise.route) {
                     PreparingExerciseRoute(
                         ambientState = ambientStateUpdate.ambientState,
